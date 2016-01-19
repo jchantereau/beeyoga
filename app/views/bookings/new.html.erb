@@ -1,0 +1,11 @@
+<h1>s'incrire pour une session</h1>
+
+<%= simple_form_for [@booking, @session] do |f| %>
+          <%= f.input :email %>
+          <%= f.input :first_name %>
+          <%= f.input :last_name %>
+          <%= f.input :age %>
+          <%= f.input :phone %>
+          <%= f.input :motivation %>
+          <%= f.button :submit, class: "btn btn-primary", value: "session" %>
+        <% end %>
