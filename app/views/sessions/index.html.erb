@@ -1,0 +1,9 @@
+<h1>Liste des sessions</h1>
+  <ul>
+    <% @sessions.each do |session| %>
+      <li>
+        <%= session.course.title%>, du <%= session.start_date%> au <%= session.end_date%> à <%= session.location%>
+        <%= link_to "réserver", session_path(session) %>
+      </li>
+    <% end %>
+  </ul>
