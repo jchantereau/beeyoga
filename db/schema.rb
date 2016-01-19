@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160119134445) do
+ActiveRecord::Schema.define(version: 20160119135825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +26,10 @@ ActiveRecord::Schema.define(version: 20160119134445) do
     t.boolean  "validated"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "session_id"
   end
+
+  add_index "bookings", ["session_id"], name: "index_bookings_on_session_id", using: :btree
 
   create_table "courses", force: :cascade do |t|
     t.string   "title"
@@ -46,5 +49,6 @@ ActiveRecord::Schema.define(version: 20160119134445) do
 
   add_index "sessions", ["course_id"], name: "index_sessions_on_course_id", using: :btree
 
+  add_foreign_key "bookings", "sessions"
   add_foreign_key "sessions", "courses"
 end
