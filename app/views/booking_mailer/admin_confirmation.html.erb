@@ -1,0 +1,11 @@
+Cher admin,<br>
+
+Vous avez une nouvelle demande d'inscription, voici le détail : <br>
+
+<%= @booking.first_name %> <%= @booking.last_name %> <br>
+
+Age : <%= @booking.age %> <br>
+Téléphone : <%= @booking.phone %> <br>
+Son message : <%= @booking.motivation %> <br>
+
+<%= link_to "Valider l'inscription", rails_admin.edit_url(model_name: 'booking', id: @booking.id) %>
