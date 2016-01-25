@@ -1,7 +1,92 @@
 
-<div class="banner-home"></div>
+<!-- Banner -->
 
-<h1>Remi bullies Julien</h1>
+<div class="banner-home text-center">
+  <div class="banner-content">
+    <%= image_tag "logo-white.png" %>
+    <h1>Yoga des abeilles®</h1>
+    <p>Une formation unique au monde, confiance en soi et ouverture aux autres.</p>
+    <%= link_to "Voir les sessions", sessions_path, class: "btn btn-primary " %>
+  </div>
+</div>
 
-<%= link_to "Voir les sessions", sessions_path, class: "btn btn-primary " %>
+
+<!-- Pourquoi participer  -->
+
+<div class="content text-center">
+  <h2>Pourquoi participer ?</h2>
+  <p>Approcher les abeilles sans crainte et accepter de les laisser se poser sur soi afin de pouvoir ressentir le monde sensitif des abeilles est une méthode naturelle puissante qui permet de retrouver ou de développer une saine confiance en soi et d’enrichir son ouverture aux autres et à la nature, pour une vie épanouie.</p>
+</div>
+
+<!-- Témoignage -->
+
+<div class="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="card">
+          <%= image_tag "Clara.jpg", class: "avatar-large" %>
+          <p>Clara</p>
+          <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card">
+          <%= image_tag "Anonyme.jpg", class: "avatar-large" %>
+          <p>Clara</p>
+          <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card">
+          <%= image_tag "Sabine.jpg", class: "avatar-large" %>
+          <p>Clara</p>
+          <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="card">
+          <%= image_tag "Didier.jpg", class: "avatar-large" %>
+          <p>Clara</p>
+          <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- On parle de nous  -->
+<h2>On parle de nous ...</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "lesechos.png", class: "presse text-center" %>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "thesimplethings.png", class: "presse text-center"%>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "greenattitude.png", class: "presse text-center"%>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <%= image_tag "psychologies.png", class: "presse text-center"%>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+  <%= image_tag "logo-white.png" %>
+  <ul>
+    <li>qui sommes-nous?</li>
+    <li>FAQ</li>
+    <li>espace presse</li>
+    <li>contact</li>
+    <li>CNIL</li>
+  </ul>
+  <%= image_tag "logo-BFA.png" %>
+</div>
+
+
 
