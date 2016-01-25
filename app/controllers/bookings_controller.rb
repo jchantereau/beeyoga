@@ -10,6 +10,7 @@ class BookingsController < ApplicationController
     @booking.validated = false
     @booking.session_id = @session.id
     if @booking.save
+      BookingMailer.creation_confirmation(@booking).deliver_now
       flash.notice = "Votre demande d'inscription a bien été reçu, nous revenons vers vous dans les plus bref délais"
       redirect_to sessions_path
     else
