@@ -3,5 +3,55 @@
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
  .banner-home{
-  background-image: url()
+    background-image: url(image-path('banner-photo.jpg'));
+    background-size: cover;
+    min-height: 630px;
+    height: 90vh;
+    padding: 100px;
  }
+
+ .banner-home p {
+    color: white;
+    padding: 10px;
+ }
+
+  .banner-home h1 {
+    color: white;
+ }
+
+
+.banner-content {
+  margin-top : 10vh;
+}
+
+h2 {
+  color: $brand-color;
+  padding: 20px;
+}
+
+p {
+  color: $gray-light;
+  padding: 20px;
+}
+
+.content {
+  margin: 100px;
+}
+
+.testimonials {
+  background-color: $brand-color;
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+  width: 90px;
+  eight: 90px;
+}
+
+.card img {
+  position: absolute;
+}
+
+.card p {
+}
