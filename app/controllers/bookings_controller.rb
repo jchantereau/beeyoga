@@ -2,15 +2,14 @@ class BookingsController < ApplicationController
   before_action :set_session, only: [:new, :create]
 
   def new
-    @session = Session.find(params[:session_id])
     @booking = Booking.new
   end
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.session_id = @session
     @booking.validated = false
     if @booking.save
+      raise
       redirect_to sessions_path
     else
       flash[:alert] = "Votre réservation est incomplète, merci de vérifier que tous les champs sont remplis"
