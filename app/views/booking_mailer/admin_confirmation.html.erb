@@ -8,4 +8,4 @@ Age : <%= @booking.age %> <br>
 Téléphone : <%= @booking.phone %> <br>
 Son message : <%= @booking.motivation %> <br>
 
-Lien pour valider
+<%= link_to "Valider l'inscription", rails_admin.edit_url(model_name: 'booking', id: @booking.id) %>
