@@ -1,0 +1,14 @@
+<h3>Veuillez remplir les informations suivantes ...</h3>
+
+<%= simple_form_for [@session, @booking] do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :email, placeholder: "email", label: false %>
+  <%= f.input :first_name, placeholder: "prénom", label: false %>
+  <%= f.input :last_name, placeholder: "nom", label: false %>
+  <%= f.input :age, placeholder: "age", label: false %>
+  <%= f.input :phone, placeholder: "phone", label: false %>
+  <%= f.input :motivation, placeholder: "Votre motivation en quelques lignes", label: false %>
+
+  <%= f.button :submit %>
+<% end %>
