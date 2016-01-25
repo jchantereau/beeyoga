@@ -2,6 +2,8 @@ class BookingsController < ApplicationController
   before_action :set_session, only: [:new, :create]
 
   def new
+    @session = Session.find(params[:session_id])
+    @booking = Booking.new
   end
 
   def create
