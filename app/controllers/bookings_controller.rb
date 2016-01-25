@@ -9,7 +9,6 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.validated = false
     if @booking.save
-      raise
       redirect_to sessions_path
     else
       flash[:alert] = "Votre réservation est incomplète, merci de vérifier que tous les champs sont remplis"
