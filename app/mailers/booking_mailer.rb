@@ -20,4 +20,12 @@ class BookingMailer < ApplicationMailer
       subject:  "Vous avez reçu une nouvelle demande d'inscription"
     )
   end
+
+  def validated(booking)
+    @booking = booking
+    mail(
+      to:       @booking.email,
+      subject:  "Votre demande d'inscription est confirmée !"
+    )
+  end
 end
