@@ -2,12 +2,17 @@
  * SASS code SPECIFIC TO your home page
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
+
  .banner-home{
     background-image: url(image-path('banner-photo.jpg'));
+    background-position: center;
     background-size: cover;
     min-height: 630px;
     height: 90vh;
     padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
  }
 
  .banner-home p {
@@ -21,7 +26,7 @@
 
 
 .banner-content {
-  margin-top : 10vh;
+  flex: 0 0 200px;
 }
 
 h2 {
@@ -35,7 +40,7 @@ p {
 }
 
 .content {
-  margin: 100px;
+  margin: 10vh;
 }
 
 .testimonials {
@@ -44,14 +49,44 @@ p {
 
 .card {
   position: relative;
-  margin: 10px;
-  width: 90px;
-  eight: 90px;
+  margin: 40px 10px 90px 10px;
+  padding: 10px;
+  height: 150px;
 }
 
 .card img {
   position: absolute;
+  left: 0px;
+  top: 30px;
+
+}
+
+.card h3 {
+  position: absolute;
+  left: 120px;
+  top: 0px;
+  color: white;
 }
 
 .card p {
+  position: absolute;
+  top: 35px;
+  left: 120px;
+  color: white;
+}
+
+.presse-container {
+  margin-top: 50px;
+}
+
+#lesechos {
+  margin-top : 140px;
+}
+
+#greenattitude {
+  margin-top : 135px;
+}
+
+#psychologies {
+  margin-top : 153px;
 }

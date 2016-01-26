@@ -26,28 +26,28 @@
       <div class="col-xs-12 col-md-6">
         <div class="card">
           <%= image_tag "Clara.jpg", class: "avatar-large" %>
-          <p>Clara</p>
+          <h3>Clara</h3>
           <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="card">
           <%= image_tag "Anonyme.jpg", class: "avatar-large" %>
-          <p>Clara</p>
+          <h3>Stéphanie</h3>
           <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="card">
           <%= image_tag "Sabine.jpg", class: "avatar-large" %>
-          <p>Clara</p>
+          <h3>Sabine</h3>
           <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="card">
           <%= image_tag "Didier.jpg", class: "avatar-large" %>
-          <p>Clara</p>
+          <h3>Didier</h3>
           <p>« Ce n'est pas une expérience qui se raconte , mais qui se vit, et croyez moi vous n'oublierez jamais cette sensation de bien être, de calme et de sérénité. »</p>
         </div>
       </div>
@@ -56,36 +56,51 @@
 </div>
 
 <!-- On parle de nous  -->
-<h2>On parle de nous ...</h2>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= image_tag "lesechos.png", class: "presse text-center" %>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= image_tag "thesimplethings.png", class: "presse text-center"%>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= image_tag "greenattitude.png", class: "presse text-center"%>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <%= image_tag "psychologies.png", class: "presse text-center"%>
+<div class="presse-container">
+  <h2 class="text-center">On parle de nous ...</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag "lesechos.png", class: "presse text-center", id: "lesechos" %>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag "thesimplethings.png", class: "presse text-center", id: "thesimplethings" %>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag "greenattitude.png", class: "presse text-center", id: "greenattitude"%>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <%= image_tag "psychologies.png", class: "presse text-center", id: "psychologies"%>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- footer -->
+
+<!-- footer  -->
+
 <div class="footer">
-  <%= image_tag "logo-white.png" %>
-  <ul>
-    <li>qui sommes-nous?</li>
-    <li>FAQ</li>
-    <li>espace presse</li>
-    <li>contact</li>
-    <li>CNIL</li>
-  </ul>
-  <%= image_tag "logo-BFA.png" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-2">
+        <%= image_tag "logo-white.png", id:"logo-footer" %>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <ul class="list-inline text-center">
+          <li>qui sommes-nous?</li>
+          <li>FAQ</li>
+          <li>espace presse</li>
+          <li>contact</li>
+          <li>CNIL</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-2">
+        <%= image_tag "logo-BFA.png", id:"bfa-footer" %>
+      </div>
+    </div>
+  </div>
 </div>
 
 
