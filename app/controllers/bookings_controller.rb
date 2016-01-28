@@ -8,7 +8,10 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @booking.validated = false
+    @booking.state = "pending"
+    @booking.session_sku = @session.sku
     @booking.session_id = @session.id
+    @booking.amount_cents = @session.price_cents
     if @booking.save
       BookingMailer.creation_confirmation(@booking).deliver_now
       BookingMailer.admin_confirmation(@booking).deliver_now
