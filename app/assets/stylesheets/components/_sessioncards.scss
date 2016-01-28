@@ -13,45 +13,35 @@
 }
 
 .sessions {
-  margin: 80px 110px 0 110px;
+  margin: 80px 110px 100px 110px;
 }
 
 .session-card {
-  position: relative;
-  height: 200px;
   border-style: groove;
   box-shadow: 2px 1px 1px grey;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 10px;
   a {
-    position: absolute;
-    right: 40px;
-    bottom: 80px;
+    margin-top: 15px;
   }
 }
 
 .price {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
 }
 
 .text-session {
-  position: absolute;
-  left: 80px;
-  top: 65px;
   font-size: 20px;
 }
 
 .date {
-  position: absolute;
-  right: 150px;
-  top: 76px;
+  width: 205px;
+  margin-top: 20px;
   background-color: $brand-color;
   color: white;
-  padding-top: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
   border-radius: 6%;
   p {
+    margin: 8px;
     padding: 2px;
     color: white;
   }
