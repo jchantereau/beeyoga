@@ -1,0 +1,6 @@
+<h1>Votre commande</h1>
+<ul>
+  <li>Status: <%= @booking.state %></li>
+  <li>Item: <%= @booking.session_sku %></li>
+  <li>Amount: <%= humanized_money_with_symbol(@booking.amount) %></li>
+<ul>
