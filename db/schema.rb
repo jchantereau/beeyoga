@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160119135825) do
+ActiveRecord::Schema.define(version: 20160128101004) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,9 +24,13 @@ ActiveRecord::Schema.define(version: 20160119135825) do
     t.string   "phone"
     t.text     "motivation"
     t.boolean  "validated"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.integer  "session_id"
+    t.string   "state"
+    t.string   "session_sku"
+    t.integer  "amount_cents", default: 0, null: false
+    t.json     "payment"
   end
 
   add_index "bookings", ["session_id"], name: "index_bookings_on_session_id", using: :btree
@@ -43,8 +47,10 @@ ActiveRecord::Schema.define(version: 20160119135825) do
     t.date     "end_date"
     t.string   "location"
     t.integer  "course_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "sku"
+    t.integer  "price_cents", default: 0, null: false
   end
 
   add_index "sessions", ["course_id"], name: "index_sessions_on_course_id", using: :btree

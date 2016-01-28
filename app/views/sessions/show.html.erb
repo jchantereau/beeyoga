@@ -2,4 +2,5 @@
 <p> <%= @session.course.description  %></p>
 <h3> du <%= @session.start_date %> au <%= @session.end_date %> à <%= @session.location %> </h3>
 <p>Amount: <%= humanized_money_with_symbol(@session.price_cents) %></p>
+
 <%= link_to "Postuler", new_session_booking_path(@session), class: "btn btn-primary " %>
