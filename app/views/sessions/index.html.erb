@@ -16,25 +16,26 @@
   <div class="banner-sessions">
     <h3 class="text-center">Participer à l'aventure Yoga des Abeilles®</h3>
   </div>
-  <div class="session-card">
-    <p class="text-session">Initiation au Yoga des Abeilles®, à Cauterêts</p>
-    <div class="date">
-      <p>du 06/07/16 au 08/07/16</p>
+  <% @sessions.each do |session| %>
+    <div class="row session-card">
+      <div class="col-xs-12 col-sm-4 col-lg-6">
+        <p class="text-session"><%= session.course.title%>, à <%= session.location%></p>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-lg-3">
+        <div class="date">
+          <p><%= session.start_date%> au <%= session.end_date%></p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-2 col-lg-1">
+        <%= link_to "Postuler", session_path(session), class: "btn btn-primary " %>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-lg-2">
+        <p class="price">Prix : 990€ TTC</p>
+      </div>
     </div>
-    <%= link_to "Postuler", sessions_path, class: "btn btn-primary " %>
-    <p class="price">Prix : 990€ TTC</p>
-   </div>
+  <% end %>
 </div>
 
 
 
 
-<h1>Liste des sessions</h1>
-  <ul>
-    <% @sessions.each do |session| %>
-      <li>
-        <%= session.course.title%>, du <%= session.start_date%> au <%= session.end_date%> à <%= session.location%>
-        <%= link_to "réserver", session_path(session) %>
-      </li>
-    <% end %>
-  </ul>
