@@ -2,7 +2,7 @@ Cher <%= @booking.first_name %>,<br>
 
 Votre demande d'inscription est confirmée.<br>
 
-Pour confirmer définitivement votre inscription, vous pouvez dès à présent régler le solde de la séance en suivant le <%= link_to "lien suivant", %><br>
+Pour confirmer définitivement votre inscription, vous pouvez dès à présent régler le solde de la séance en suivant le <%= link_to "lien suivant", new_booking_payment_url(@booking) %><br>
 
 Merci pour votre confiance, <br>
 <br>
