@@ -16,24 +16,45 @@
   margin: 80px 110px 0 110px;
 }
 
-.sessions-card {
+.session-card {
   position: relative;
+  height: 200px;
+  border-style: groove;
+  box-shadow: 2px 1px 1px grey;
+  a {
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+  }
 }
 
-.session-card a {
+.price {
   position: absolute;
+  right: 12px;
+  bottom: 12px;
 }
 
 .text-session {
   position: absolute;
-  left: 400px;
-  top: 20px;
+  left: 80px;
+  top: 65px;
+  font-size: 20px;
 }
 
 .date {
   position: absolute;
-  left: 40px;
-  top: 20px;
+  right: 150px;
+  top: 76px;
+  background-color: $brand-color;
+  color: white;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 6%;
+  p {
+    padding: 2px;
+    color: white;
+  }
   }
 
 
