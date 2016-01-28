@@ -12,3 +12,11 @@
 
 Admin_username: 'remibllt'
 Admin_password: 'pass1234'
+
+development:
+  STRIPE_PUBLISHABLE_KEY: pk_test_8IEz6qA5Kg24PmEFW57xieN6
+  STRIPE_SECRET_KEY: sk_test_OGE7WgkRz2BI2eNXEsBfDuZJ
+
+production:
+  STRIPE_PUBLISHABLE_KEY: pk_live_mQn4bk8HgFeSC1imp2WqEwkx
+  STRIPE_SECRET_KEY: sk_live_uwQIuauEaRLMRfD8ciVyzq5O

@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'payments/new'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'pages#home'
 
   resources :sessions, only: [:index, :show] do
-    resources :bookings, only: [:new, :create, :show]
+    resources :bookings, only: [:new, :create]
+  end
+
+  resources :bookings, only: [:show] do
+    resources :payments, only: [:new, :create]
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -23,6 +23,10 @@ class BookingsController < ApplicationController
     end
   end
 
+  def show
+    @booking = Booking.where(state: 'pending').find(params[:id])
+  end
+
   private
 
   def send_validation_email
