@@ -1,0 +1,61 @@
+
+.banner-sessions {
+  background-image: url(image-path('femmealongee.jpg'));
+  background-position: center;
+  background-size: cover;
+  min-height: 260px;
+  width: auto;
+  padding-top: 160px;
+}
+
+.banner-sessions h3 {
+  color: white;
+}
+
+.sessions {
+  margin: 80px 110px 0 110px;
+}
+
+.sessions-card {
+  position: relative;
+}
+
+.session-card a {
+  position: absolute;
+}
+
+.text-session {
+  position: absolute;
+  left: 400px;
+  top: 20px;
+}
+
+.date {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  }
+
+
+.navbar {
+  position: relative;
+  height: 70px;
+  width: auto;
+}
+
+.navbar ul {
+  position: absolute;
+  left: 100px;
+  top: 21px;
+  color: white;
+}
+
+.navbar li {
+  margin: 0px;
+}
+
+#logo-nav {
+  width: 40px;
+  height: auto;
+  margin: 10px 0 0 15px;
+}
