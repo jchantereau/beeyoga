@@ -4,4 +4,11 @@ class Booking < ActiveRecord::Base
   validates_presence_of :email, :first_name, :last_name, :age, :phone, :motivation
 
   monetize :amount_cents
+  after_update :send_validation_email
+
+  private
+
+  def send_validation_email
+    BookingMailer.validated(self).deliver_now unless validated == false
+  end
 end

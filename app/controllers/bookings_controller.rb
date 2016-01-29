@@ -11,7 +11,7 @@ class BookingsController < ApplicationController
     @booking.state = "pending"
     @booking.session_sku = @session.sku
     @booking.session_id = @session.id
-    @booking.amount_cents = @session.price_cents
+    @booking.amount = @session.price
     if @booking.save
       BookingMailer.creation_confirmation(@booking).deliver_now
       BookingMailer.admin_confirmation(@booking).deliver_now

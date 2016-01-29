@@ -27,6 +27,17 @@ RailsAdmin.config do |config|
     end
 
     config.main_app_name { ['My App', 'Admin'] }
+
+    config.model 'Session' do
+      create do
+        field :start_date
+        field :end_date
+        field :location
+        field :course
+        field :sku
+        field :price
+      end
+    end
   end
 
   config.actions do
