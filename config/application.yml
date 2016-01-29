@@ -20,3 +20,4 @@ development:
 production:
   STRIPE_PUBLISHABLE_KEY: pk_live_mQn4bk8HgFeSC1imp2WqEwkx
   STRIPE_SECRET_KEY: sk_live_uwQIuauEaRLMRfD8ciVyzq5O
+  POSTMARK_API_TOKEN: a6772da7-f88b-4b4f-ab49-40ed318f6999
