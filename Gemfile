@@ -22,7 +22,7 @@ gem "letter_opener", group: :development
 
 group :development, :test do
   gem 'binding_of_caller'
-  gem 'better_errors'
+  gem 'better_errors', '2.1.0'
   gem 'quiet_assets'
   gem 'pry-byebug'
   gem 'pry-rails'

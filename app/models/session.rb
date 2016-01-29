@@ -3,4 +3,5 @@ class Session < ActiveRecord::Base
   has_many :bookings
 
   monetize :price_cents
+  validates :price_cents, numericality: { greater_than: 10000, message: "Attention, prix < 100!" }
 end
