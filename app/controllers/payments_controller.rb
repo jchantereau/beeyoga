@@ -2,6 +2,7 @@ class PaymentsController < ApplicationController
   before_action :set_booking
 
   def new
+    raise
     unless params[:email] == "$6dttsO4QAXTY"
       authenticate_or_request_with_http_basic('Site Message') do |username, password|
         username == ENV["Admin_username"] && password == ENV["Admin_password"]

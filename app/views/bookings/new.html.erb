@@ -1,16 +1,18 @@
 <div class="container-fluid">
-  <div class="col-xs-12 col-md-4 col-md-offset-4 nopadding">
+  <div class="col-xs-12 col-sm-4 col-sm-offset-4 nopadding text-center">
     <h3>Veuillez remplir les informations suivantes ...</h3>
 
     <%= simple_form_for [@session, @booking] do |f| %>
       <%= f.error_notification %>
 
-      <%= f.input :email, placeholder: "email", label: false %>
-      <%= f.input :first_name, placeholder: "prénom", label: false %>
-      <%= f.input :last_name, placeholder: "nom", label: false %>
-      <%= f.input :age, placeholder: "age", label: false %>
-      <%= f.input :phone, placeholder: "phone", label: false %>
-      <%= f.input :motivation, placeholder: "Votre motivation en quelques lignes", label: false %>
+      <%= f.input :email, label: false, error: "à remplir ou mauvais format" %>
+      <%= f.input :first_name, placeholder: "prénom", label: false, error: "à remplir" %>
+      <%= f.input :last_name, placeholder: "nom", label: false, error: "à remplir" %>
+      <%= f.input :age, placeholder: "age", label: false, error: "à remplir" %>
+      <%= f.input :phone, placeholder: "phone", label: false, error: "à remplir" %>
+      <%= f.input :motivation, placeholder: "votre motivation en quelques lignes", label: false, error: "à remplir" %>
+
+      <p><em>* Vous serez recontacté après traitement de votre demande</em></p>
 
       <%= f.button :submit, 'Valider', class: "btn btn-primary" %>
     <% end %>
