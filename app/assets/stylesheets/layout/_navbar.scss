@@ -1,6 +1,5 @@
 .navbar {
   background-color: $brand-color;
-  position: fix;
   height: 70px;
   width: auto;
   margin-bottom: -22px;
@@ -18,7 +17,7 @@
     color: white;
   }
   li {
-  margin: 0px;
+    margin: 0px;
   }
 }
 
