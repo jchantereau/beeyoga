@@ -1,1 +1,17 @@
-// Your footer style
+.footer {
+  background-color: $brand-color;
+  ul {
+    margin-top: 10px;
+    color: white;
+    list-style: none;
+  }
+  img {
+    width: 75%;
+    margin: 10px 0;
+  }
+}
+
+#logo-footer {
+  width: 65%;
+}
+
