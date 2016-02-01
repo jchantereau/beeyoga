@@ -52,27 +52,27 @@ p {
   margin: 40px 10px 90px 10px;
   padding: 10px;
   height: 150px;
-}
-
-.card img {
+  img {
   position: absolute;
   left: 0px;
   top: 30px;
-
-}
-
-.card h3 {
+  }
+  h3 {
   position: absolute;
   left: 120px;
   top: 0px;
   color: white;
-}
-
-.card p {
+  }
+  p {
   position: absolute;
   top: 35px;
   left: 120px;
   color: white;
+  }
+}
+
+#description {
+  margin: 80px;
 }
 
 .presse-container {
