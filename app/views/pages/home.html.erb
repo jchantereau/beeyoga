@@ -13,14 +13,14 @@
 
 <!-- Pourquoi participer  -->
 
-<div class="content text-center">
+<div class="text-center">
   <h2>Pourquoi participer ?</h2>
   <p>Approcher les abeilles sans crainte et accepter de les laisser se poser sur soi afin de pouvoir ressentir le monde sensitif des abeilles est une méthode naturelle puissante qui permet de retrouver ou de développer une saine confiance en soi et d’enrichir son ouverture aux autres et à la nature, pour une vie épanouie.</p>
 </div>
 
 <!-- Témoignage -->
 
-<div class="testimonials">
+<div class="bg-brand">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6">
@@ -57,22 +57,30 @@
 
 <!-- On parle de nous  -->
 
-<div class="presse-container">
-  <h2 class="text-center">On parle de nous ...</h2>
+<div class="presse-container text-center">
+  <h2>On parle de nous ...</h2>
 
   <div class="container">
-    <div class="row">
+    <div class="row", id="home-img">
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= image_tag "lesechos.png", class: "presse text-center", id: "lesechos" %>
+        <%= link_to "http://www.lesechos.fr/week-end/perso/developpement-personnel/021528968716-le-rush-vers-les-ruches-1181575.php", target: "blank" do %>
+          <%= image_tag "lesechos.png" %>
+        <% end %>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= image_tag "thesimplethings.png", class: "presse text-center", id: "thesimplethings" %>
+        <%= link_to "#", target: "blank" do %>
+          <%= image_tag "thesimplethings.png" %>
+        <% end %>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= image_tag "greenattitude.png", class: "presse text-center", id: "greenattitude"%>
+        <%= link_to "#", target: "blank" do %>
+          <%= image_tag "greenattitude.png" %>
+        <% end %>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <%= image_tag "psychologies.png", class: "presse text-center", id: "psychologies"%>
+        <%= link_to "#", target: "blank" do %>
+          <%= image_tag "psychologies.png" %>
+        <% end %>
       </div>
     </div>
   </div>
