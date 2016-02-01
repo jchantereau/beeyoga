@@ -1,14 +1,12 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="navbar container">
-    <%= link_to root_path do %>
-      <%= image_tag "logo-white.png", id: "logo-nav" %>
-    <% end %>
-    <ul class="list-inline">
-      <li><%= link_to "Accueil", root_path %></li>
-      <li><%= link_to "Séances", sessions_path %></li>
-      <li>FAQ</li>
-      <li>Contact</li>
-    </ul>
-    <%= link_to "Voir les sessions", sessions_path, id:"btn-nav", class: "action-btn-nav hidden-xs" %>
-  </div>
+<nav class="navbar">
+  <%= link_to root_path do %>
+    <%= image_tag "logo-white.png", id: "logo-nav" %>
+  <% end %>
+  <ul class="list-inline">
+    <li><%= link_to "Accueil", root_path %></li>
+    <li><%= link_to "Séances", sessions_path %></li>
+    <li>FAQ</li>
+    <li>Contact</li>
+  </ul>
+  <%= link_to "Voir les sessions", sessions_path, id:"btn-nav", class: "action-btn-nav hidden-xs" %>
 </nav>

@@ -1,21 +1,17 @@
 .footer {
   background-color: $brand-color;
-}
-
-.footer ul {
-  margin-top: 110px;
-  color: white;
+  ul {
+    margin-top: 10px;
+    color: white;
+    list-style: none;
+  }
+  img {
+    width: 75%;
+    margin: 10px 0;
+  }
 }
 
 #logo-footer {
-  width: 100px;
-  height: auto;
-  margin-top : 30px;
+  width: 65%;
 }
 
-#bfa-footer {
-  width: 160px;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
