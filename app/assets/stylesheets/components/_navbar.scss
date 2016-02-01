@@ -1,3 +1,30 @@
 .navbar {
   background-color: $brand-color;
+  position: fix;
+  height: 70px;
+  width: auto;
+  margin-bottom: -22px;
+}
+
+#btn-nav {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+#logo-nav {
+  position: absolute;
+  left: 0px;
+  top:-2px;
+}
+
+.navbar ul {
+  position: absolute;
+  left: 100px;
+  top: 21px;
+  color: white;
+}
+
+.navbar li {
+  margin: 0px;
 }
