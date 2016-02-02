@@ -3,7 +3,7 @@
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
 
- .banner-home{
+.banner-home {
   background-image: url(image-path('banner-photo.jpg'));
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@
   h1 {
     color: white;
   }
- }
+}
 
 .banner-content {
   flex: 0 0 200px;
@@ -65,19 +65,24 @@ p {
     width: 50%;
     margin: 20px 0;
   }
+  h3 {
+  position: absolute;
+  left: 120px;
+  top: 0px;
+  color: white;
+  }
+  p {
+  position: absolute;
+  top: 35px;
+  left: 120px;
+  color: white;
+  }
 }
-// .presse-container {
-//   margin-top: 50px;
-// }
 
-// #lesechos {
-//   margin-top : 140px;
-// }
+#description {
+  margin: 80px;
+}
 
-// #greenattitude {
-//   margin-top : 135px;
-// }
-
-// #psychologies {
-//   margin-top : 153px;
-// }
+.presse-container {
+  margin-top: 50px;
+}
