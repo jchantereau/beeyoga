@@ -37,9 +37,12 @@ p {
 
 .card {
   position: relative;
-  margin: 40px 10px 90px 10px;
-  padding: 10px;
-  height: 150px;
+  margin: 40px 10px;
+  padding: 20px;
+  height: 20vh;
+  @media (max-width: $screen-xs) {
+   height: 50vh;
+   }
   img {
     position: absolute;
   }
@@ -64,6 +67,9 @@ p {
   img {
     width: 50%;
     margin: 20px 0;
+    @media (max-width: $screen-sm) {
+      width: 35%;
+    }
   }
   h3 {
   position: absolute;
