@@ -4,25 +4,63 @@
   <div class="banner-sessions">
     <h3 class="text-center">Participer à l'aventure Yoga des Abeilles®</h3>
   </div>
+
+<!--   <% accordioncounter = 0 %>
   <% @sessions.each do |session| %>
-    <div class="row session-card">
-      <div class="col-xs-12 col-sm-4 col-lg-6">
-        <p class="text-session"><%= session.course.title%>, à <%= session.location%></p>
-      </div>
-      <div class="col-xs-12 col-sm-5 col-lg-3">
-        <div class="date">
-          <p><%= session.start_date%> au <%= session.end_date%></p>
+  <% accordioncounter += 1 %>
+    <div class="accordion-group">
+      <div class="row session-card">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapse<%= accordioncounter %>">
+            <div class="col-xs-12 col-sm-4 col-lg-6">
+              <p class="text-session"><%= session.course.title%>, à <%= session.location%></p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-lg-3">
+              <div class="date">
+                <p><%= session.start_date.strftime("%d/%m/%y") %> au <%= session.end_date.strftime("%d/%m/%y")%></p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 col-lg-1">
+              <%= link_to "Postuler", new_session_booking_path(session), class: "btn btn-primary " %>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-lg-2">
+              <p class="price">Prix : <%= session.price %> TTC</p>
+            </div>
+          </a>
+        </div>
+        <div id="collapse<%= accordioncounter %>" class="accordion-body collapse">
+          <div class="accordion-inner">
+            <p id="description"><%= session.course.description %></p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-6 col-sm-2 col-lg-1">
-        <%= link_to "Postuler", session_path(session), class: "btn btn-primary" %>
-      </div>
-      <div class="col-xs-6 col-sm-3 col-lg-2">
-        <p class="price">Prix : 990€ TTC</p>
+
+    </div>
+  <% end %> -->
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse" data-target="#demo">
+      <h3 class="panel-title">Initiation au yoga des abeilles</h3>
+    </div>
+    <div class="panel-body">
+      <span class="text-info"> du 03/07/16 au 05/07/16</span>
+      <span class="text-info"> Prix: 800€</span>
+      <%= link_to "Postuler", root_path, class: "btn btn-primary "%>
+      <div  id="demo" class="collapse">
+        Durant six nuits et cinq jours, dans un écrin de nature et d’eau pure au pied des Pyrénées, vingt-cinq participant(e)s issu(e)s de diverses nationalités ont pu apprendre, grâce à une préparation intense et originale, à ouvrir les ruches en short ou en robe, sans voile, ni tenue protectrice, ni masque.\nDurant la formation, les stagiaires ont pu laisser les abeilles se poser directement sur eux par centaines, à même la peau nue, s’accordant ainsi un privilège rare réservé jusqu’à présent à des apiculteurs chevronnés.\nYoga des abeilles en familleCette véritable immersion dans le monde sensitif des abeilles fut animée par Catherine Flurin elle-même, en plein cœur de son rucher personnel composé de quatre-vingts ruches bio en bois polarisé et peuplé de cinq millions d’abeilles. Les stagiaires étaient pour la grande majorité des débutants complets en connaissance des abeilles et en apiculture. La plus jeune participante était une petite Lucie de cinq semaines, au sein de sa maman Julie, apicultrice à Montreuil.
+
       </div>
     </div>
-  <% end %>
+  </div>
+
 </div>
+
+
+
+
+
+
 
 
 

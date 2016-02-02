@@ -6,10 +6,9 @@
   min-height: 260px;
   width: auto;
   padding-top: 160px;
-}
-
-.banner-sessions h3 {
-  color: white;
+  h3 {
+    color: white;
+    }
 }
 
 .sessions {
@@ -22,6 +21,7 @@
   margin-left: 1px;
   margin-right: 1px;
   margin-bottom: 10px;
+  max-height: 500px;
   a {
     margin-top: 15px;
   }
@@ -35,7 +35,7 @@
 }
 
 .date {
-  width: 205px;
+  width: 181px;
   margin-top: 20px;
   background-color: $brand-color;
   color: white;
@@ -52,3 +52,5 @@
   height: auto;
   margin: 10px 0 0 15px;
 }
+
+
