@@ -3,27 +3,24 @@
  * (margin/padding adjustments, background image, etc..)
  * ------------------------------------- */
 
- .banner-home{
-    background-image: url(image-path('banner-photo.jpg'));
-    background-position: center;
-    background-size: cover;
-    min-height: 630px;
-    height: 90vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
-
- .banner-home p {
+.banner-home {
+  background-image: url(image-path('banner-photo.jpg'));
+  background-position: center;
+  background-size: cover;
+  min-height: 630px;
+  height: 90vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
     color: white;
     padding: 10px;
- }
-
-  .banner-home h1 {
+  }
+  h1 {
     color: white;
- }
-
+  }
+}
 
 .banner-content {
   flex: 0 0 200px;
@@ -31,20 +28,11 @@
 
 h2 {
   color: $brand-color;
-  padding: 20px;
 }
 
 p {
   color: $gray-light;
-  padding: 20px;
-}
-
-.content {
-  margin: 10vh;
-}
-
-.testimonials {
-  background-color: $brand-color;
+  padding: 30px;
 }
 
 .card {
@@ -53,9 +41,29 @@ p {
   padding: 10px;
   height: 150px;
   img {
-  position: absolute;
-  left: 0px;
-  top: 30px;
+    position: absolute;
+  }
+  h3 {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    color: white;
+  }
+  p {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    color: white;
+  }
+}
+
+#home-img {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    width: 50%;
+    margin: 20px 0;
   }
   h3 {
   position: absolute;
@@ -77,16 +85,4 @@ p {
 
 .presse-container {
   margin-top: 50px;
-}
-
-#lesechos {
-  margin-top : 140px;
-}
-
-#greenattitude {
-  margin-top : 135px;
-}
-
-#psychologies {
-  margin-top : 153px;
 }
