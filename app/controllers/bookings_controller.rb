@@ -29,10 +29,6 @@ class BookingsController < ApplicationController
 
   private
 
-  def send_validation_email
-    BookingMailer.validated(@booking).deliver_now unless @booking.validated == false
-  end
-
   def set_session
     @session = Session.find(params[:session_id])
   end

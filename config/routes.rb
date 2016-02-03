@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'faq' => "pages#faq"
 
+  resources :messages, only: [:new, :create]
+
   resources :sessions, only: [:index, :show] do
     resources :bookings, only: [:new, :create]
   end

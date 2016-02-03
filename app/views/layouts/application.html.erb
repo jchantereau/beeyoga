@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
-  <body>
-    <%= render 'shared/flashes' %>
-    <%= render 'shared/navbar' %>
-    <%= yield %>
+  <body class="site">
+    <main class="Site-content">
+      <%= render 'shared/flashes' %>
+      <%= render 'shared/navbar' %>
+      <%= yield %>
+    </main>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
   </body>
