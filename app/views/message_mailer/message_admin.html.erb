@@ -1,0 +1,10 @@
+Cher admin,<br>
+
+Vous avez un nouveau message: <br>
+
+De : <%= @message.name %><br>
+
+email : <%= @message.email %> <br>
+Son message : <%= @message.content %> <br>
+
+<%= link_to "Voir le message", rails_admin.edit_url(model_name: 'message', id: @message.id) %>
