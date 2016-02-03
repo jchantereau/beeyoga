@@ -1,0 +1,28 @@
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+h1 {
+  color: $brand-color;
+  text-align: center;
+  margin: 5vh 0px
+}
+
+h2 {
+  color: $brand-color;
+}
+
+h3 {
+  color: $brand-color;
+}
+
+p {
+  color: $gray-light;
+  padding: 30px;
+}
