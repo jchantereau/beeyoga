@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'pages#home'
 
+  get 'faq' => "pages#faq"
+
   resources :sessions, only: [:index, :show] do
     resources :bookings, only: [:new, :create]
   end
